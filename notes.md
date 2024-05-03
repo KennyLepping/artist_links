@@ -1,0 +1,9 @@
+Tailwind Compile CSS Command:
+npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch
+
+How to convert images to webp format:
+    cwebp -q 100 samplegen-smaller-background-1.png -o samplegen-smaller-background-1.webp
+    See: https://web.dev/articles/codelab-serve-images-webp
+
+Copy icon SVG:
+https://www.svgrepo.com/svg/521116/copy
