@@ -7,8 +7,40 @@
   background-image: linear-gradient(90deg, #bd4faf, #5794db, #bd4faf, #5794db);
   background-size: 300% 100%;
 }
+.galaxy-phonk-bg-button-animation {
+  animation: animateBg 5s linear infinite;
+  background-image: linear-gradient(90deg, #2E5B70, #E59C2D, #2E5B70, #E59C2D);
+  background-size: 300% 100%;
+}
+.tbsb-bg-button-animation {
+  animation: animateBg 5s linear infinite;
+  background-image: linear-gradient(90deg, #121A27, #FBD8A4, #121A27, #FBD8A4);
+  background-size: 300% 100%;
+}
+.spotify-bg-button-animation {
+  animation: animateBg 5s linear infinite;
+  background-image: linear-gradient(90deg, #090909, #1ED760, #090909, #1ED760);
+  background-size: 300% 100%;
+}
+.apple-music-bg-button-animation {
+  animation: animateBg 5s linear infinite;
+  background-image: linear-gradient(90deg, #aeaeae, #FA2B43, #ffffff, #FA2B43);
+  background-size: 300% 100%;
+}
 .hover-animation:hover {
   filter: hue-rotate(60deg) drop-shadow(4px 4px 10px blue);
+}
+.gp-hover-animation:hover {
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 10px #E59C2D);
+}
+.tbsb-hover-animation:hover {
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 10px #FBD8A4);
+}
+.spotify-hover-animation:hover {
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 10px #1ED760);
+}
+.am-hover-animation:hover {
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 10px #FA2B43);
 }
 .wrapper {
   display: flex; 
