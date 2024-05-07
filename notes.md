@@ -7,3 +7,5 @@ How to convert images to webp format:
 
 Copy icon SVG:
 https://www.svgrepo.com/svg/521116/copy
+
+TODO: Make animated rounded squares/circles change color to the song or streaming service theme colors on hover
