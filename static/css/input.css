@@ -31,16 +31,16 @@
   filter: hue-rotate(60deg) drop-shadow(4px 4px 10px blue);
 }
 .gp-hover-animation:hover {
-  filter: hue-rotate(10deg) drop-shadow(4px 4px 10px #E59C2D);
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #E59C2D);
 }
 .tbsb-hover-animation:hover {
-  filter: hue-rotate(10deg) drop-shadow(4px 4px 10px #FBD8A4);
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #FBD8A4);
 }
 .spotify-hover-animation:hover {
-  filter: hue-rotate(10deg) drop-shadow(4px 4px 10px #1ED760);
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #1ED760);
 }
 .am-hover-animation:hover {
-  filter: hue-rotate(10deg) drop-shadow(4px 4px 10px #FA2B43);
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #FA2B43);
 }
 .wrapper {
   display: flex; 
