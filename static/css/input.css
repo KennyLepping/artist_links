@@ -2,9 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+.link-card {
+  @apply block px-6 py-2 border border-gray-600 rounded-lg duration-300;
+}
+
+.samplegen-logo-animation {
+  background: linear-gradient(90deg, #66adff, #9868BF, #66adff); /* Add a third color stop to make the gradient flow smoothly */
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s infinite linear; /* Increase duration for smoother flow */
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%; /* Loop back to the starting position */
+  }
+}
+
 .bg-button-animation {
   animation: animateBg 5s linear infinite;
   background-image: linear-gradient(90deg, #bd4faf, #5794db, #bd4faf, #5794db);
+  background-size: 300% 100%;
+}
+.samplegen-bg-button-animation {
+  animation: animateBg 5s linear infinite;
+  background-image: linear-gradient(90deg, black, #9868BF, black);
   background-size: 300% 100%;
 }
 .galaxy-phonk-bg-button-animation {
@@ -27,8 +56,27 @@
   background-image: linear-gradient(90deg, #aeaeae, #FA2B43, #ffffff, #FA2B43);
   background-size: 300% 100%;
 }
+.instagram-bg-button-animation {
+  animation: animateBg 5s linear infinite;
+  background-image: linear-gradient(90deg, #aeaeae, #C62F94, #aeaeae, #C62F94);
+  background-size: 300% 100%;
+}
+.facebook-bg-button-animation {
+  animation: animateBg 5s linear infinite;
+  background-image: linear-gradient(90deg, #aeaeae, #0866FF, #aeaeae, #0866FF);
+  background-size: 300% 100%;
+}
+.instagram-hover-animation:hover {
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #C62F94);
+}
+.facebook-hover-animation:hover {
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #0866FF);
+}
 .hover-animation:hover {
   filter: hue-rotate(60deg) drop-shadow(4px 4px 10px blue);
+}
+.samplegen-hover-animation:hover {
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #9868BF);
 }
 .gp-hover-animation:hover {
   filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #E59C2D);

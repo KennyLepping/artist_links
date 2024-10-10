@@ -562,25 +562,6 @@ video {
   z-index: 50;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.block {
-  display: block;
-}
-
 .inline {
   display: inline;
 }
@@ -595,10 +576,6 @@ video {
 
 .w-12 {
   width: 3rem;
-}
-
-.w-\[32rem\] {
-  width: 32rem;
 }
 
 .w-full {
@@ -639,15 +616,6 @@ video {
   border-radius: 0.5rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
-.border-gray-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(75 85 99 / var(--tw-border-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -661,19 +629,18 @@ video {
   background-position: center;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-base {
@@ -699,9 +666,53 @@ video {
   transition-duration: 300ms;
 }
 
+.link-card {
+  display: block;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition-duration: 300ms;
+}
+
+.samplegen-logo-animation {
+  background: linear-gradient(90deg, #66adff, #9868BF, #66adff);
+  /* Add a third color stop to make the gradient flow smoothly */
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s infinite linear;
+  /* Increase duration for smoother flow */
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+    /* Loop back to the starting position */
+  }
+}
+
 .bg-button-animation {
   animation: animateBg 5s linear infinite;
   background-image: linear-gradient(90deg, #bd4faf, #5794db, #bd4faf, #5794db);
+  background-size: 300% 100%;
+}
+
+.samplegen-bg-button-animation {
+  animation: animateBg 5s linear infinite;
+  background-image: linear-gradient(90deg, black, #9868BF, black);
   background-size: 300% 100%;
 }
 
@@ -729,8 +740,32 @@ video {
   background-size: 300% 100%;
 }
 
+.instagram-bg-button-animation {
+  animation: animateBg 5s linear infinite;
+  background-image: linear-gradient(90deg, #aeaeae, #C62F94, #aeaeae, #C62F94);
+  background-size: 300% 100%;
+}
+
+.facebook-bg-button-animation {
+  animation: animateBg 5s linear infinite;
+  background-image: linear-gradient(90deg, #aeaeae, #0866FF, #aeaeae, #0866FF);
+  background-size: 300% 100%;
+}
+
+.instagram-hover-animation:hover {
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #C62F94);
+}
+
+.facebook-hover-animation:hover {
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #0866FF);
+}
+
 .hover-animation:hover {
   filter: hue-rotate(60deg) drop-shadow(4px 4px 10px blue);
+}
+
+.samplegen-hover-animation:hover {
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #9868BF);
 }
 
 .gp-hover-animation:hover {
