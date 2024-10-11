@@ -81,6 +81,9 @@
                 </div>
             </section>
         </main>
+        <!-- Overlay -->
+        <div id="overlay" class="fixed top-0 left-0 w-full h-full bg-black opacity-75 z-30 hidden"></div>
+
         <!-- CONTAINER MODAL-->
         <div id="shareLinkModal" class="absolute z-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden">
             <!--MODAL ITEM-->
@@ -88,7 +91,7 @@
                 class="absolute top-2 right-6 cursor-pointer hover:text-gray-400 font-open-sans text-gray-500 text-3xl w-8">
                 x
             </button>
-            <div class="bg-gray-100 mx-4 p-4 rounded-xl w-[32rem]">
+            <div class="bg-gray-100 mx-4 p-4 rounded-xl md:w-[32rem] w-80">
                 <!--MODAL HEADER-->
                 <div
                     class="flex justify-center border-b border-gray-200 py-3">
@@ -275,6 +278,7 @@
                 },
             }
             let shareModal = document.getElementById('shareLinkModal')
+            let overlay = document.getElementById('overlay')
             let linkToCopy = document.getElementById('linkToCopy')
             let copyLinkBtn = document.getElementById('copyLinkBtn')
 
@@ -292,6 +296,7 @@
                 event.stopPropagation();
 
                 shareModal.style = 'display: block'
+                overlay.style = 'display: block'
                 linkToCopy.value = artistLinks[buttonId].link
                 facebookLink.href = artistLinks[buttonId].facebook
                 twitterLink.href = artistLinks[buttonId].twitter
@@ -301,6 +306,7 @@
             }
             const closeShareModal = () => {
                 shareModal.style = 'display: none'
+                overlay.style = 'display: none'
                 copyLinkBtn.innerText = 'Copy'
             }
             const copyLink = () => {
