@@ -27,6 +27,12 @@
 }
 
 .bg-button-animation {
+  animation: gradientShift 5s linear infinite;
+  background-image: linear-gradient(90deg, #bd4faf, #5794db, #bd4faf, #5794db);
+  background-size: 300% 100%;
+}
+
+.bg-button-animation {
   animation: animateBg 5s linear infinite;
   background-image: linear-gradient(90deg, #bd4faf, #5794db, #bd4faf, #5794db);
   background-size: 300% 100%;

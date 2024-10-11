@@ -24,60 +24,56 @@
                                 <div class="flex justify-between items-center">
                                     <span class="w-12 font-open-sans samplegen-logo-animation text-4xl">SG</span>
                                     <span>SampleGen</span>
-                                    <button id="samplegenBtn" onclick="copyLink(event, 'samplegenBtn')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    <button id="samplegen" onclick="openShareModal(event, 'samplegen')"><img src="./static/img/share-icon.svg" alt="Share"></button>
                                 </div>
                             </a>
                             <a href="https://youtu.be/jytljffr7VE?si=rWdKNheocGbSe1Q3" target="_blank" rel="noreferrer noopener" class="link-card galaxy-phonk-bg-button-animation gp-hover-animation">
                                 <div class="flex justify-between items-center">
                                     <img src="./static/img/Galaxy Phonk Cover Art Thumbnail.png" alt="Art" class="w-12 inline">
                                     <span>Galaxy Phonk 🎶</span>
-                                    <button id="galaxyPhonkBtn" onclick="copyLink(event, 'galaxyPhonkBtn')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                    <div id="" role="tooltip" class="absolute z-10 inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 rounded-lg shadow-sm opacity-0 tooltip bg-gray-700">
-                                        <span id="success-tooltip-message" class="">Copied!</span>
-                                        <div class="tooltip-arrow" data-popper-arrow></div>
-                                    </div>
+                                    <button id="galaxyPhonk" onclick="openShareModal(event, 'galaxyPhonk')"><img src="./static/img/share-icon.svg" alt="Share"></button>
                                 </div>
                             </a>
                             <a href="https://open.spotify.com/artist/4oBdTVdfE4QM1WwREkfbmD?si=4x8DQzEdTb6bnAg4cBFbwg" class="link-card tbsb-bg-button-animation tbsb-hover-animation">
                                 <div class="flex justify-between items-center">
                                     <img src="./static/img/The Bass Strikes Back Cover Art Thumbnail.png" alt="Art" class="w-12 inline">
                                     <span>The Bass Strikes Back 🎶</span>
-                                    <button id="tbsbBtn" onclick="copyLink(event, 'tbsbBtn')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    <button id="tbsb" onclick="openShareModal(event, 'tbsb')"><img src="./static/img/share-icon.svg" alt="Share"></button>
                                 </div>
                             </a>
                             <a href="https://open.spotify.com/artist/4oBdTVdfE4QM1WwREkfbmD?si=4x8DQzEdTb6bnAg4cBFbwg" class="link-card spotify-bg-button-animation spotify-hover-animation">
                                 <div class="flex justify-between items-center">
                                     <img src="./static/img/spotify-icon.svg" alt="Art" class="w-12 inline">
                                     <span>Spotify</span>
-                                    <button id="spotifyBtn" onclick="copyLink(event, 'spotifyBtn')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    <button id="spotify" onclick="openShareModal(event, 'spotify')"><img src="./static/img/share-icon.svg" alt="Share"></button>
                                 </div>
                             </a>
                             <a href="https://music.apple.com/us/artist/echoes-embrace/945431275" class="link-card apple-music-bg-button-animation am-hover-animation">
                                 <div class="flex justify-between items-center">
                                     <img src="./static/img/apple-music.svg" alt="Art" class="w-12 inline">
                                     <span>Apple Music</span>
-                                    <button id="amBtn" onclick="copyLink(event, 'amBtn')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    <button id="appleMusic" onclick="openShareModal(event, 'appleMusic')"><img src="./static/img/share-icon.svg" alt="Share"></button>
                                 </div>
                             </a>
                             <a href="https://instagram.com/ken_echoes" class="link-card instagram-bg-button-animation instagram-hover-animation">
                                 <div class="flex justify-between items-center">
                                     <img src="./static/img/instagram.svg" alt="Art" class="w-12 inline">
                                     <span>Instagram</span>
-                                    <button id="igBtn" onclick="copyLink(event, 'igBtn')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    <button id="instagram" onclick="openShareModal(event, 'instagram')"><img src="./static/img/share-icon.svg" alt="Share"></button>
                                 </div>
                             </a>
                             <a href="https://soundcloud.com/echoesmbrace" class="link-card soundcloud-bg-button-animation soundcloud-hover-animation">
                                 <div class="flex justify-between items-center">
                                     <img src="./static/img/soundcloud.svg" alt="Art" class="w-12 inline">
                                     <span>Soundcloud</span>
-                                    <button id="scBtn" onclick="copyLink(event, 'scBtn')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    <button id="soundcloud" onclick="openShareModal(event, 'soundcloud')"><img src="./static/img/share-icon.svg" alt="Share"></button>
                                 </div>
                             </a>
                             <a href="https://facebook.com/echoesembrace" class="link-card facebook-bg-button-animation facebook-hover-animation">
                                 <div class="flex justify-between items-center">
                                     <img src="./static/img/facebook.svg" alt="Art" class="w-12 inline">
                                     <span>Facebook</span>
-                                    <button id="fbBtn" onclick="copyLink(event, 'fbBtn')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    <button id="facebook" onclick="openShareModal(event, 'facebook')"><img src="./static/img/share-icon.svg" alt="Share"></button>
                                 </div>
                             </a>
                         </div>
@@ -86,20 +82,20 @@
             </section>
         </main>
         <!-- CONTAINER MODAL-->
-        <div class="absolute z-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div id="shareLinkModal" class="absolute z-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden">
             <!--MODAL ITEM-->
-            <span
-                class="absolute top-4 right-7 cursor-pointer hover:text-gray-400 font-open-sans text-gray-500 text-3xl w-8">
+            <button onclick="document.getElementById('shareLinkModal').style = 'display: none;'"
+                class="absolute top-2 right-6 cursor-pointer hover:text-gray-400 font-open-sans text-gray-500 text-3xl w-8">
                 x
-            </span>
+            </button>
             <div class="bg-gray-100 mx-4 p-4 rounded-xl w-[32rem]">
                 <!--MODAL HEADER-->
                 <div
-                class="flex justify-center border-b border-gray-200 py-3">
-                <div class="flex items-center justify-center">
-                    <p class="text-xl font-bold text-gray-800">Share Link</p>
+                    class="flex justify-center border-b border-gray-200 py-3">
+                    <div class="flex items-center justify-center">
+                        <p class="text-xl font-bold text-gray-800">Share Link</p>
+                    </div>
                 </div>
-            </div>
 
                 <!--MODAL BODY-->
                 <div class="my-4">
@@ -191,9 +187,9 @@
                             d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"></path>
                     </svg>
 
-                    <input class="w-full outline-none bg-transparent" type="text" placeholder="link" value="https://boxicons.com/?query=link">
+                    <input class="w-full outline-none bg-transparent" type="text" placeholder="link" id="linkToCopy">
 
-                    <button class="bg-indigo-500 text-white rounded text-sm py-2 px-5 mr-2 hover:bg-indigo-600">
+                    <button class="bg-button-animation hover:hue-rotate-60 duration-300 text-white rounded text-sm py-2 px-5 mr-2">
                         Copy
                     </button>
                 </div>
@@ -201,21 +197,92 @@
         </div>
         </div>
         <script>
-            const copyLink = (event, buttonId) => {
+            const artistLinks = {
+                samplegen: {
+                    link: "https://www.samplegen.com/",
+                    facebook: "https://facebook.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    twitter: "https://twitter.com/intent/tweet?url=https://boxicons.com/?query=galaxyPhonk",
+                    instagram: "https://instagram.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    whatsapp: "https://wa.me/?text=https://boxicons.com/?query=galaxyPhonk",
+                    telegram: "https://t.me/share/url?url=https://boxicons.com/?query=galaxyPhonk",
+                },
+                galaxyPhonk: {
+                    link: "https://youtu.be/jytljffr7VE?si=rWdKNheocGbSe1Q3",
+                    facebook: "https://facebook.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    twitter: "https://twitter.com/intent/tweet?url=https://boxicons.com/?query=galaxyPhonk",
+                    instagram: "https://instagram.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    whatsapp: "https://wa.me/?text=https://boxicons.com/?query=galaxyPhonk",
+                    telegram: "https://t.me/share/url?url=https://boxicons.com/?query=galaxyPhonk",
+                },
+                tbsb: {
+                    link: "https://open.spotify.com/artist/4oBdTVdfE4QM1WwREkfbmD?si=4x8DQzEdTb6bnAg4cBFbwg",
+                    facebook: "https://facebook.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    twitter: "https://twitter.com/intent/tweet?url=https://boxicons.com/?query=galaxyPhonk",
+                    instagram: "https://instagram.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    whatsapp: "https://wa.me/?text=https://boxicons.com/?query=galaxyPhonk",
+                    telegram: "https://t.me/share/url?url=https://boxicons.com/?query=galaxyPhonk",
+                },
+                spotify: {
+                    link: "https://open.spotify.com/artist/4oBdTVdfE4QM1WwREkfbmD?si=4x8DQzEdTb6bnAg4cBFbwg",
+                    facebook: "https://facebook.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    twitter: "https://twitter.com/intent/tweet?url=https://boxicons.com/?query=galaxyPhonk",
+                    instagram: "https://instagram.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    whatsapp: "https://wa.me/?text=https://boxicons.com/?query=galaxyPhonk",
+                    telegram: "https://t.me/share/url?url=https://boxicons.com/?query=galaxyPhonk",
+                },
+                appleMusic: {
+                    link: "https://music.apple.com/us/artist/echoes-embrace/945431275",
+                    facebook: "https://facebook.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    twitter: "https://twitter.com/intent/tweet?url=https://boxicons.com/?query=galaxyPhonk",
+                    instagram: "https://instagram.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    whatsapp: "https://wa.me/?text=https://boxicons.com/?query=galaxyPhonk",
+                    telegram: "https://t.me/share/url?url=https://boxicons.com/?query=galaxyPhonk",
+                },
+                instagram: {
+                    link: "https://instagram.com/ken_echoes",
+                    facebook: "https://facebook.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    twitter: "https://twitter.com/intent/tweet?url=https://boxicons.com/?query=galaxyPhonk",
+                    instagram: "https://instagram.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    whatsapp: "https://wa.me/?text=https://boxicons.com/?query=galaxyPhonk",
+                    telegram: "https://t.me/share/url?url=https://boxicons.com/?query=galaxyPhonk",
+                },
+                soundcloud: {
+                    link: "https://soundcloud.com/echoesembrace",
+                    facebook: "https://facebook.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    twitter: "https://twitter.com/intent/tweet?url=https://boxicons.com/?query=galaxyPhonk",
+                    instagram: "https://instagram.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    whatsapp: "https://wa.me/?text=https://boxicons.com/?query=galaxyPhonk",
+                    telegram: "https://t.me/share/url?url=https://boxicons.com/?query=galaxyPhonk",
+                },
+                facebook: {
+                    link: "https://facebook.com/echoesembrace",
+                    facebook: "https://facebook.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    twitter: "https://twitter.com/intent/tweet?url=https://boxicons.com/?query=galaxyPhonk",
+                    instagram: "https://instagram.com/share?url=https://boxicons.com/?query=galaxyPhonk",
+                    whatsapp: "https://wa.me/?text=https://boxicons.com/?query=galaxyPhonk",
+                    telegram: "https://t.me/share/url?url=https://boxicons.com/?query=galaxyPhonk",
+                },
+            }
+            let shareModal = document.getElementById('shareLinkModal')
+            let linkToCopy = document.getElementById('linkToCopy')
+            const openShareModal = (event, buttonId) => {
                 // Prevent the click from navigating to the parent <a> tag
                 event.preventDefault();
                 event.stopPropagation();
 
-                // Get the parent <a> tag's href attribute
-                const linkElement = document.getElementById(buttonId).closest('a');
-                const linkHref = linkElement.getAttribute('href');
+                shareModal.style = 'display: block'
 
-                // Copy the link to the clipboard (or perform any other action)
-                navigator.clipboard.writeText(linkHref).then(() => {
-                    console.log('Link copied to clipboard:', linkHref);
-                }).catch(err => {
-                    console.error('Failed to copy link:', err);
-                });
+                linkToCopy.value = artistLinks[buttonId].link
+
+                // const linkElement = document.getElementById(buttonId).closest('a');
+                // const linkHref = linkElement.getAttribute('href');
+
+                // // Copy the link to the clipboard (or perform any other action)
+                // navigator.clipboard.writeText(linkHref).then(() => {
+                //     console.log('Link copied to clipboard:', linkHref);
+                // }).catch(err => {
+                //     console.error('Failed to copy link:', err);
+                // });
             }
         </script>
     </body>
