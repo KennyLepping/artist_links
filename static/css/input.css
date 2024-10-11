@@ -66,11 +66,19 @@
   background-image: linear-gradient(90deg, #aeaeae, #0866FF, #aeaeae, #0866FF);
   background-size: 300% 100%;
 }
+.soundcloud-bg-button-animation {
+  animation: animateBg 5s linear infinite;
+  background-image: linear-gradient(90deg, #aeaeae, #FF5500, #aeaeae, #FF5500);
+  background-size: 300% 100%;
+}
 .instagram-hover-animation:hover {
   filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #C62F94);
 }
 .facebook-hover-animation:hover {
   filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #0866FF);
+}
+.soundcloud-hover-animation:hover {
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #FF5500);
 }
 .hover-animation:hover {
   filter: hue-rotate(60deg) drop-shadow(4px 4px 10px blue);
@@ -101,8 +109,8 @@
 }
 .ring-effect {
   position: relative;
-  width: 700px;
-  height: 700px;
+  width: 800px;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
