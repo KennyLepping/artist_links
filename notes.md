@@ -9,9 +9,11 @@ Copy icon SVG:
 https://www.svgrepo.com/svg/521116/copy
 
 TODO: Make animated rounded squares/circles change color to the song or streaming service theme colors on hover
-TODO: Add Artist image
-TODO: Add favicon
-TODO: Add share modal link previews like Linktree
+DONE: Add Artist image
+DONE: Add favicon
+DONE: Add share modal link previews like Linktree
 TODO: Adjust size of animated circle/squares when needed
 TODO: Possibly gather emails
 TODO: Optimize
+TODO: Host with GitHub Pages or Netlify and use something like link.echoesembrace.com
+TODO: Add embedded video
