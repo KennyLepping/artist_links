@@ -19,63 +19,66 @@
                         <i style="--clr:#0062ff;"></i>
                         <!-- <i style="--clr:#fffd44;"></i> -->
                         <!-- <i style="--clr:#ff00ee;"></i> -->
-                        <div id="songLinks" class="w-full max-w-[32rem] px-2 text-base font-medium text-white space-y-3 z-40">
-                            <a href="https://www.samplegen.com/" target="_blank" rel="noreferrer noopener" class="link-card samplegen-bg-button-animation samplegen-hover-animation">
-                                <div class="flex justify-between items-center">
-                                    <span class="w-12 font-open-sans samplegen-logo-animation text-4xl">SG</span>
-                                    <span>SampleGen</span>
-                                    <button id="samplegen" onclick="openShareModal(event, 'samplegen')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                </div>
-                            </a>
-                            <a href="https://youtu.be/jytljffr7VE?si=rWdKNheocGbSe1Q3" target="_blank" rel="noreferrer noopener" class="link-card galaxy-phonk-bg-button-animation gp-hover-animation">
-                                <div class="flex justify-between items-center">
-                                    <img src="./static/img/Galaxy Phonk Cover Art Thumbnail.png" alt="Art" class="w-12 inline">
-                                    <span>Galaxy Phonk 🎶</span>
-                                    <button id="galaxyPhonk" onclick="openShareModal(event, 'galaxyPhonk')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                </div>
-                            </a>
-                            <a href="https://open.spotify.com/artist/4oBdTVdfE4QM1WwREkfbmD?si=4x8DQzEdTb6bnAg4cBFbwg" class="link-card tbsb-bg-button-animation tbsb-hover-animation">
-                                <div class="flex justify-between items-center">
-                                    <img src="./static/img/The Bass Strikes Back Cover Art Thumbnail.png" alt="Art" class="w-12 inline">
-                                    <span>The Bass Strikes Back 🎶</span>
-                                    <button id="tbsb" onclick="openShareModal(event, 'tbsb')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                </div>
-                            </a>
-                            <a href="https://open.spotify.com/artist/4oBdTVdfE4QM1WwREkfbmD?si=4x8DQzEdTb6bnAg4cBFbwg" class="link-card spotify-bg-button-animation spotify-hover-animation">
-                                <div class="flex justify-between items-center">
-                                    <img src="./static/img/spotify-icon.svg" alt="Art" class="w-12 inline">
-                                    <span>Spotify</span>
-                                    <button id="spotify" onclick="openShareModal(event, 'spotify')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                </div>
-                            </a>
-                            <a href="https://music.apple.com/us/artist/echoes-embrace/945431275" class="link-card apple-music-bg-button-animation am-hover-animation">
-                                <div class="flex justify-between items-center">
-                                    <img src="./static/img/apple-music.svg" alt="Art" class="w-12 inline">
-                                    <span>Apple Music</span>
-                                    <button id="appleMusic" onclick="openShareModal(event, 'appleMusic')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                </div>
-                            </a>
-                            <a href="https://instagram.com/ken_echoes" class="link-card instagram-bg-button-animation instagram-hover-animation">
-                                <div class="flex justify-between items-center">
-                                    <img src="./static/img/instagram.svg" alt="Art" class="w-12 inline">
-                                    <span>Instagram</span>
-                                    <button id="instagram" onclick="openShareModal(event, 'instagram')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                </div>
-                            </a>
-                            <a href="https://soundcloud.com/echoesmbrace" class="link-card soundcloud-bg-button-animation soundcloud-hover-animation">
-                                <div class="flex justify-between items-center">
-                                    <img src="./static/img/soundcloud.svg" alt="Art" class="w-12 inline">
-                                    <span>Soundcloud</span>
-                                    <button id="soundcloud" onclick="openShareModal(event, 'soundcloud')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                </div>
-                            </a>
-                            <a href="https://facebook.com/echoesembrace" class="link-card facebook-bg-button-animation facebook-hover-animation">
-                                <div class="flex justify-between items-center">
-                                    <img src="./static/img/facebook.svg" alt="Art" class="w-12 inline">
-                                    <span>Facebook</span>
-                                    <button id="facebook" onclick="openShareModal(event, 'facebook')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                </div>
-                            </a>
+                        <div class="flex flex-col">
+                            <img src="./static/img/EchoesEmbraceLogo.png" alt="Echoes Embrace Logo" class="rounded-full w-40 m-auto z-40">
+                            <div id="songLinks" class="w-full max-w-[32rem] px-2 text-base font-medium text-white space-y-3 z-40 mt-8">
+                                <a href="https://www.sa96mplegen.com/" target="_blank" rel="noreferrer noopener" class="link-card samplegen-bg-button-animation samplegen-hover-animation">
+                                    <div class="flex justify-between items-center">
+                                        <span class="w-12 font-open-sans samplegen-logo-animation text-4xl">SG</span>
+                                        <span>SampleGen (Free Original Samples)</span>
+                                        <button id="samplegen" onclick="openShareModal(event, 'samplegen')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    </div>
+                                </a>
+                                <a href="https://youtu.be/jytljffr7VE?si=rWdKNheocGbSe1Q3" target="_blank" rel="noreferrer noopener" class="link-card galaxy-phonk-bg-button-animation gp-hover-animation">
+                                    <div class="flex justify-between items-center">
+                                        <img src="./static/img/Galaxy Phonk Cover Art Thumbnail.png" alt="Art" class="w-12 inline">
+                                        <span>Galaxy Phonk 🎶</span>
+                                        <button id="galaxyPhonk" onclick="openShareModal(event, 'galaxyPhonk')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    </div>
+                                </a>
+                                <a href="https://open.spotify.com/artist/4oBdTVdfE4QM1WwREkfbmD?si=4x8DQzEdTb6bnAg4cBFbwg" class="link-card tbsb-bg-button-animation tbsb-hover-animation">
+                                    <div class="flex justify-between items-center">
+                                        <img src="./static/img/The Bass Strikes Back Cover Art Thumbnail.png" alt="Art" class="w-12 inline">
+                                        <span>The Bass Strikes Back 🎶</span>
+                                        <button id="tbsb" onclick="openShareModal(event, 'tbsb')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    </div>
+                                </a>
+                                <a href="https://open.spotify.com/artist/4oBdTVdfE4QM1WwREkfbmD?si=4x8DQzEdTb6bnAg4cBFbwg" class="link-card spotify-bg-button-animation spotify-hover-animation">
+                                    <div class="flex justify-between items-center">
+                                        <img src="./static/img/spotify-icon.svg" alt="Art" class="w-12 inline">
+                                        <span>Spotify</span>
+                                        <button id="spotify" onclick="openShareModal(event, 'spotify')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    </div>
+                                </a>
+                                <a href="https://music.apple.com/us/artist/echoes-embrace/945431275" class="link-card apple-music-bg-button-animation am-hover-animation">
+                                    <div class="flex justify-between items-center">
+                                        <img src="./static/img/apple-music.svg" alt="Art" class="w-12 inline">
+                                        <span>Apple Music</span>
+                                        <button id="appleMusic" onclick="openShareModal(event, 'appleMusic')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    </div>
+                                </a>
+                                <a href="https://instagram.com/ken_echoes" class="link-card instagram-bg-button-animation instagram-hover-animation">
+                                    <div class="flex justify-between items-center">
+                                        <img src="./static/img/instagram.svg" alt="Art" class="w-12 inline">
+                                        <span>Instagram</span>
+                                        <button id="instagram" onclick="openShareModal(event, 'instagram')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    </div>
+                                </a>
+                                <a href="https://soundcloud.com/echoesmbrace" class="link-card soundcloud-bg-button-animation soundcloud-hover-animation">
+                                    <div class="flex justify-between items-center">
+                                        <img src="./static/img/soundcloud.svg" alt="Art" class="w-12 inline">
+                                        <span>Soundcloud</span>
+                                        <button id="soundcloud" onclick="openShareModal(event, 'soundcloud')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    </div>
+                                </a>
+                                <a href="https://facebook.com/echoesembrace" class="link-card facebook-bg-button-animation facebook-hover-animation">
+                                    <div class="flex justify-between items-center">
+                                        <img src="./static/img/facebook.svg" alt="Art" class="w-12 inline">
+                                        <span>Facebook</span>
+                                        <button id="facebook" onclick="openShareModal(event, 'facebook')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,7 +118,7 @@
                                     height="24"
                                     viewBox="0 0 24 24">
                                     <path
-                                    d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
+                                        d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
                                 </svg>
                             </a>
                         </div>
@@ -289,7 +292,7 @@
             let whatsappLink = document.getElementById('whatsappLink')
             let linkedinLink = document.getElementById('linkedinLink')
             let telegramLink = document.getElementById('telegramLink')
- 
+
             const openShareModal = (event, buttonId) => {
                 // Prevent the click from navigating to the parent <a> tag
                 event.preventDefault();
