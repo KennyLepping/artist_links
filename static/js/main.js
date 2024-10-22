@@ -20,7 +20,7 @@ function init() {
 
   canvas = document.createElement("canvas")
   document.body.appendChild(canvas)
-  document.body.style = "margin:0;touch-action:none;overflow:hidden"
+  document.body.style = "margin:0;touch-action:none;"
   canvas.style.width = "100.1%"
   canvas.style.height = "auto"
   canvas.style.objectFit = "contain"
