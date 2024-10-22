@@ -562,6 +562,10 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -584,6 +588,10 @@ video {
 
 .top-2 {
   top: 0.5rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .z-30 {
@@ -616,6 +624,10 @@ video {
   margin-right: 0.5rem;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -624,28 +636,8 @@ video {
   margin-top: 2rem;
 }
 
-.mt-36 {
-  margin-top: 9rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mr-4 {
-  margin-right: 1rem;
-}
-
 .block {
   display: block;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .inline {
@@ -863,14 +855,6 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
-}
-
-.pt-36 {
-  padding-top: 9rem;
-}
-
 .font-open-sans {
   font-family: "Open Sans", sans-serif;
 }
@@ -1076,7 +1060,6 @@ video {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #111;
   width: 100%;
   overflow: hidden;
 }
@@ -1145,6 +1128,17 @@ video {
   100% {
     transform: rotate(0deg);
   }
+}
+
+canvas {
+  position: fixed;
+  /* Fixed so that it stays in the background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Ensure it is behind the main content */
 }
 
 .hover\:bg-\[\#1877f2\]:hover {

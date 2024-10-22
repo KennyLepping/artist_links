@@ -109,7 +109,6 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #111;
   width: 100%;
   overflow: hidden;
 }
@@ -166,4 +165,12 @@
   100% {
     transform: rotate(0deg);
   }
+}
+canvas {
+    position: fixed; /* Fixed so that it stays in the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it is behind the main content */
 }
