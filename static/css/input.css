@@ -27,19 +27,13 @@
 }
 
 .bg-button-animation {
-  animation: gradientShift 5s linear infinite;
-  background-image: linear-gradient(90deg, #bd4faf, #5794db, #bd4faf, #5794db);
-  background-size: 300% 100%;
-}
-
-.bg-button-animation {
   animation: animateBg 5s linear infinite;
   background-image: linear-gradient(90deg, #bd4faf, #5794db, #bd4faf, #5794db);
   background-size: 300% 100%;
 }
 .mechwasteland-bg-button-animation {
   animation: animateBg 5s linear infinite;
-  background-image: linear-gradient(90deg, black, #9868BF, black);
+  background-image: linear-gradient(90deg, #195DEE, #B0ABDE, #195DEE);
   background-size: 300% 100%;
 }
 .samplegen-bg-button-animation {
@@ -99,6 +93,9 @@
 }
 .gp-hover-animation:hover {
   filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #E59C2D);
+}
+.mw-hover-animation:hover {
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #195DEE);
 }
 .tbsb-hover-animation:hover {
   filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #FBD8A4);
