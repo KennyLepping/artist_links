@@ -1023,6 +1023,12 @@ video {
   background-size: 300% 100%;
 }
 
+.youtube-bg-button-animation {
+  animation: animateBg 5s linear infinite;
+  background-image: linear-gradient(90deg, #aeaeae, #CE1312, #ffffff, #CE1312);
+  background-size: 300% 100%;
+}
+
 .soundcloud-bg-button-animation {
   animation: animateBg 5s linear infinite;
   background-image: linear-gradient(90deg, #aeaeae, #FF5500, #aeaeae, #FF5500);
@@ -1039,6 +1045,10 @@ video {
 
 .soundcloud-hover-animation:hover {
   filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #FF5500);
+}
+
+.youtube-hover-animation:hover {
+  filter: hue-rotate(10deg) drop-shadow(4px 4px 15px #CE1312);
 }
 
 .hover-animation:hover {
