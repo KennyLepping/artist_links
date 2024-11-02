@@ -23,6 +23,13 @@
                         <div class="flex flex-col">
                             <img src="./static/img/EchoesEmbraceLogo.png" alt="Echoes Embrace Logo" class="rounded-full w-40 m-auto z-40">
                             <div id="songLinks" class="w-full max-w-[32rem] px-2 text-base font-medium text-white space-y-3 z-40 mt-8">
+                                <a href="https://youtu.be/jytljffr7VE?si=rWdKNheocGbSe1Q3" target="_blank" rel="noreferrer noopener" class="link-card galaxy-phonk-bg-button-animation gp-hover-animation">
+                                    <div class="flex justify-between items-center">
+                                        <img src="./static/img/Mech Wasteland Cover Art 3000 x 3000.jpg" alt="Art" class="w-12 inline">
+                                        <span>Mech Wasteland 🎶</span>
+                                        <button id="mechWasteland" onclick="openShareModal(event, 'mechWasteland')"></button>
+                                    </div>
+                                </a>
                                 <a href="https://www.samplegen.com/" target="_blank" rel="noreferrer noopener" class="link-card samplegen-bg-button-animation samplegen-hover-animation">
                                     <div class="flex justify-between items-center">
                                         <span class="w-12 font-open-sans samplegen-logo-animation text-4xl mr-4">SG</span>
@@ -216,6 +223,14 @@
         </div>
         <script>
             const artistLinks = {
+                mechWasteland: {
+                    link: "https://li.sten.to/MechWasteland",
+                    facebook: "https://www.facebook.com/sharer/sharer.php?u=https://li.sten.to/mechwasteland",
+                    twitter: "http://twitter.com/share?text=Presave Mech Wasteland! Cinematic Dubstep 🎶 -&url=https://li.sten.to/mechwasteland",
+                    instagram: "https://www.instagram.com/reel/CvTB2qeNhUZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+                    whatsapp: "https://api.whatsapp.com/send/?text=Presave Mech Wasteland! Cinematic Dubstep 🎶 - https://li.sten.to/mechwasteland",
+                    telegram: "https://telegram.me/share/url?url=https://li.sten.to/mechwasteland?si=rWdKNheocGbSe1Q3&text=Presave Mech Wasteland! Cinematic Dubstep 🎶 ",
+                },
                 samplegen: {
                     link: "https://www.samplegen.com/",
                     facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.samplegen.com/",

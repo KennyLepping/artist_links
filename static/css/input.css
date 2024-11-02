@@ -37,6 +37,11 @@
   background-image: linear-gradient(90deg, #bd4faf, #5794db, #bd4faf, #5794db);
   background-size: 300% 100%;
 }
+.mechwasteland-bg-button-animation {
+  animation: animateBg 5s linear infinite;
+  background-image: linear-gradient(90deg, black, #9868BF, black);
+  background-size: 300% 100%;
+}
 .samplegen-bg-button-animation {
   animation: animateBg 5s linear infinite;
   background-image: linear-gradient(90deg, black, #9868BF, black);
