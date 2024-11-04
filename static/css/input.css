@@ -6,6 +6,10 @@
   @apply block px-6 py-2 border border-gray-600 rounded-lg duration-300;
 }
 
+.link-card-main {
+  @apply block border border-gray-600 rounded-lg duration-300;
+}
+
 .samplegen-logo-animation {
   background: linear-gradient(90deg, #66adff, #9868BF, #66adff); /* Add a third color stop to make the gradient flow smoothly */
   background-size: 200% 200%;

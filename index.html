@@ -18,83 +18,85 @@
                         <i style="--clr:#00ff0a;"></i>
                         <i style="--clr:#ff0057;"></i>
                         <i style="--clr:#0062ff;"></i> -->
-                        <!-- <i style="--clr:#fffd44;"></i> -->
-                        <!-- <i style="--clr:#ff00ee;"></i> -->
-                        <div class="flex flex-col">
-                            <img src="./static/img/EchoesEmbraceLogo.png" alt="Echoes Embrace Logo" class="rounded-full w-40 m-auto z-40">
-                            <div id="songLinks" class="w-full max-w-[32rem] px-2 text-base font-medium text-white space-y-3 z-40 mt-8">
-                                <a href="https://push.fm/ps/mechwasteland" target="_blank" rel="noreferrer noopener" class="link-card mechwasteland-bg-button-animation mw-hover-animation">
-                                    <div class="flex justify-between items-center">
-                                        <img src="./static/img/Mech Wasteland Cover Art 3000 x 3000.jpg" alt="Art" class="w-12 inline">
+                    <!-- <i style="--clr:#fffd44;"></i> -->
+                    <!-- <i style="--clr:#ff00ee;"></i> -->
+                    <div class="flex flex-col">
+                        <img src="./static/img/EchoesEmbraceLogo.png" alt="Echoes Embrace Logo" class="rounded-full w-40 m-auto z-40">
+                        <div id="songLinks" class="w-full max-w-[32rem] px-2 text-base font-medium text-white space-y-3 z-40 mt-8">
+                            <a href="https://push.fm/ps/mechwasteland" target="_blank" rel="noreferrer noopener" class="link-card-main mechwasteland-bg-button-animation mw-hover-animation px-0 rounded-t-md overflow-hidden">
+                                <div class="flex-col justify-between items-center text-center">
+                                    <img src="./static/img/Mech Wasteland Cover Art 3000 x 3000.jpg" alt="Art" class="w-full inline">
+                                    <div class="flex justify-center items-center gap-5 mt-2">
                                         <span>Presave Mech Wasteland 🎶</span>
                                         <button id="mechWasteland" onclick="openShareModal(event, 'mechWasteland')"><img src="./static/img/share-icon.svg" alt="Share"></button>
                                     </div>
-                                </a>
-                                <a href="https://www.samplegen.com/" target="_blank" rel="noreferrer noopener" class="link-card samplegen-bg-button-animation samplegen-hover-animation">
-                                    <div class="flex justify-between items-center">
-                                        <span class="w-12 font-open-sans samplegen-logo-animation text-4xl mr-4">SG</span>
-                                        <span>SampleGen (Free Original Samples)</span>
-                                        <button id="samplegen" onclick="openShareModal(event, 'samplegen')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                    </div>
-                                </a>
-                                <a href="https://youtu.be/jytljffr7VE?si=rWdKNheocGbSe1Q3" target="_blank" rel="noreferrer noopener" class="link-card galaxy-phonk-bg-button-animation gp-hover-animation">
-                                    <div class="flex justify-between items-center">
-                                        <img src="./static/img/Galaxy Phonk Cover Art Thumbnail.png" alt="Art" class="w-12 inline">
-                                        <span>Galaxy Phonk 🎶</span>
-                                        <button id="galaxyPhonk" onclick="openShareModal(event, 'galaxyPhonk')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                    </div>
-                                </a>
-                                <a href="https://open.spotify.com/artist/4oBdTVdfE4QM1WwREkfbmD?si=4x8DQzEdTb6bnAg4cBFbwg" class="link-card tbsb-bg-button-animation tbsb-hover-animation">
-                                    <div class="flex justify-between items-center">
-                                        <img src="./static/img/The Bass Strikes Back Cover Art Thumbnail.png" alt="Art" class="w-12 inline">
-                                        <span>The Bass Strikes Back 🎶</span>
-                                        <button id="tbsb" onclick="openShareModal(event, 'tbsb')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                    </div>
-                                </a>
-                                <a href="https://open.spotify.com/artist/4oBdTVdfE4QM1WwREkfbmD?si=4x8DQzEdTb6bnAg4cBFbwg" class="link-card spotify-bg-button-animation spotify-hover-animation">
-                                    <div class="flex justify-between items-center">
-                                        <img src="./static/img/spotify-icon.svg" alt="Art" class="w-12 inline">
-                                        <span>Spotify</span>
-                                        <button id="spotify" onclick="openShareModal(event, 'spotify')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                    </div>
-                                </a>
-                                <a href="https://music.apple.com/us/artist/echoes-embrace/945431275" class="link-card apple-music-bg-button-animation am-hover-animation">
-                                    <div class="flex justify-between items-center">
-                                        <img src="./static/img/apple-music.svg" alt="Art" class="w-12 inline">
-                                        <span>Apple Music</span>
-                                        <button id="appleMusic" onclick="openShareModal(event, 'appleMusic')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                    </div>
-                                </a>
-                                <a href="https://instagram.com/ken_echoes" class="link-card instagram-bg-button-animation instagram-hover-animation">
-                                    <div class="flex justify-between items-center">
-                                        <img src="./static/img/instagram.svg" alt="Art" class="w-12 inline">
-                                        <span>Instagram</span>
-                                        <button id="instagram" onclick="openShareModal(event, 'instagram')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                    </div>
-                                </a>
-                                <a href="https://soundcloud.com/echoesmbrace" class="link-card soundcloud-bg-button-animation soundcloud-hover-animation">
-                                    <div class="flex justify-between items-center">
-                                        <img src="./static/img/soundcloud.svg" alt="Art" class="w-12 inline">
-                                        <span>SoundCloud</span>
-                                        <button id="soundcloud" onclick="openShareModal(event, 'soundcloud')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                    </div>
-                                </a>
-                                <a href="https://youtube.com/@echoesembrace" class="link-card youtube-bg-button-animation youtube-hover-animation">
-                                    <div class="flex justify-between items-center">
-                                        <img src="./static/img/youtube.svg" alt="Art" class="w-12 inline">
-                                        <span>YouTube</span>
-                                        <button id="youtube" onclick="openShareModal(event, 'youtube')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                    </div>
-                                </a>
-                                <a href="https://facebook.com/echoesembrace" class="link-card facebook-bg-button-animation facebook-hover-animation">
-                                    <div class="flex justify-between items-center">
-                                        <img src="./static/img/facebook.svg" alt="Art" class="w-12 inline">
-                                        <span>Facebook</span>
-                                        <button id="facebook" onclick="openShareModal(event, 'facebook')"><img src="./static/img/share-icon.svg" alt="Share"></button>
-                                    </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                            <a href="https://www.samplegen.com/" target="_blank" rel="noreferrer noopener" class="link-card samplegen-bg-button-animation samplegen-hover-animation">
+                                <div class="flex justify-between items-center">
+                                    <span class="w-12 font-open-sans samplegen-logo-animation text-4xl mr-4">SG</span>
+                                    <span>SampleGen (Free Original Samples)</span>
+                                    <button id="samplegen" onclick="openShareModal(event, 'samplegen')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                </div>
+                            </a>
+                            <a href="https://youtu.be/jytljffr7VE?si=rWdKNheocGbSe1Q3" target="_blank" rel="noreferrer noopener" class="link-card galaxy-phonk-bg-button-animation gp-hover-animation">
+                                <div class="flex justify-between items-center">
+                                    <img src="./static/img/Galaxy Phonk Cover Art Thumbnail.png" alt="Art" class="w-12 inline">
+                                    <span>Galaxy Phonk 🎶</span>
+                                    <button id="galaxyPhonk" onclick="openShareModal(event, 'galaxyPhonk')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/artist/4oBdTVdfE4QM1WwREkfbmD?si=4x8DQzEdTb6bnAg4cBFbwg" class="link-card tbsb-bg-button-animation tbsb-hover-animation">
+                                <div class="flex justify-between items-center">
+                                    <img src="./static/img/The Bass Strikes Back Cover Art Thumbnail.png" alt="Art" class="w-12 inline">
+                                    <span>The Bass Strikes Back <span class="hidden sm:inline-block">🎶</span></span>
+                                    <button id="tbsb" onclick="openShareModal(event, 'tbsb')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/artist/4oBdTVdfE4QM1WwREkfbmD?si=4x8DQzEdTb6bnAg4cBFbwg" class="link-card spotify-bg-button-animation spotify-hover-animation">
+                                <div class="flex justify-between items-center">
+                                    <img src="./static/img/spotify-icon.svg" alt="Art" class="w-12 inline">
+                                    <span>Spotify</span>
+                                    <button id="spotify" onclick="openShareModal(event, 'spotify')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                </div>
+                            </a>
+                            <a href="https://music.apple.com/us/artist/echoes-embrace/945431275" class="link-card apple-music-bg-button-animation am-hover-animation">
+                                <div class="flex justify-between items-center">
+                                    <img src="./static/img/apple-music.svg" alt="Art" class="w-12 inline">
+                                    <span>Apple Music</span>
+                                    <button id="appleMusic" onclick="openShareModal(event, 'appleMusic')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                </div>
+                            </a>
+                            <a href="https://instagram.com/ken_echoes" class="link-card instagram-bg-button-animation instagram-hover-animation">
+                                <div class="flex justify-between items-center">
+                                    <img src="./static/img/instagram.svg" alt="Art" class="w-12 inline">
+                                    <span>Instagram</span>
+                                    <button id="instagram" onclick="openShareModal(event, 'instagram')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                </div>
+                            </a>
+                            <a href="https://soundcloud.com/echoesmbrace" class="link-card soundcloud-bg-button-animation soundcloud-hover-animation">
+                                <div class="flex justify-between items-center">
+                                    <img src="./static/img/soundcloud.svg" alt="Art" class="w-12 inline">
+                                    <span>SoundCloud</span>
+                                    <button id="soundcloud" onclick="openShareModal(event, 'soundcloud')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                </div>
+                            </a>
+                            <a href="https://youtube.com/@echoesembrace" class="link-card youtube-bg-button-animation youtube-hover-animation">
+                                <div class="flex justify-between items-center">
+                                    <img src="./static/img/youtube.svg" alt="Art" class="w-12 inline">
+                                    <span>YouTube</span>
+                                    <button id="youtube" onclick="openShareModal(event, 'youtube')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                </div>
+                            </a>
+                            <a href="https://facebook.com/echoesembrace" class="link-card facebook-bg-button-animation facebook-hover-animation">
+                                <div class="flex justify-between items-center">
+                                    <img src="./static/img/facebook.svg" alt="Art" class="w-12 inline">
+                                    <span>Facebook</span>
+                                    <button id="facebook" onclick="openShareModal(event, 'facebook')"><img src="./static/img/share-icon.svg" alt="Share"></button>
+                                </div>
+                            </a>
                         </div>
+                    </div>
                     <!-- </div> -->
                 </div>
             </section>
@@ -353,7 +355,7 @@
             }
         </script>
 
-<script type="x-shader/x-fragment">#version 300 es
+        <script type="x-shader/x-fragment">#version 300 es
 /*********
 * made by Matthias Hurrle (@atzedent)
 */ 
@@ -421,7 +423,7 @@ void main() {
 	col=mix(col,vec3(.3,.6,.9),pow(abs(rd.y),1.4));
 	O=vec4(col,1);
 }</script>
-  <script src="./static/js/main.js"></script>
+        <script src="./static/js/main.js"></script>
     </body>
 
 </html>
